@@ -12,3 +12,13 @@ h3 {
 
   float: right;
 }
+
+.completed {
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.completed .btn{
+  background-color: green;
+
+}

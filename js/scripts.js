@@ -11,7 +11,10 @@ $(function(){
 
 
     var newTask = new Task(userTask);
-    $("#outputSection").append("<li class='task'>" + userTask + "<button class='remove btn btn-danger'>Completed</button>" + "<hr> </li>" )
+    $("#outputSection").append("<li class='task'>"
+    + userTask
+    + "<button class='remove btn btn-danger'>Completed</button>" 
+    + "<hr> </li>" )
 
     // $(".task").last().click(function(){
     //   $("#show-place").show();
@@ -23,7 +26,7 @@ $(function(){
     // });
 
     $(".remove").last().click(function(){
-        $(this).parent().remove();
+        $(this).parent().toggleClass("completed");
     });
 
     $("#task").val("");

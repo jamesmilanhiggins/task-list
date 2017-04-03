@@ -1,13 +1,14 @@
-#show-place {
-  display: none;
+
+.task {
+
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-.place {
-  cursor: pointer;
-  color: #0088cc;
-  list-style: none;
+h3 {
+  margin-top: 0px;
 }
+.remove {
 
-.place:hover {
-  text-decoration: underline;
+  float: right;
 }

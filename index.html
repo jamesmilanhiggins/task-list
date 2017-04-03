@@ -6,43 +6,33 @@
 
     <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title></title>
+    <title>To Do List</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Task List</h1>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <form>
             <div class="form-group">
-              <label for="location">Location</label>
-              <input id="location" class="form-control" type="text" name="location" value="">
-
-              <label for="landmarks">Landmarks</label>
-              <input id="landmarks" class="form-control" type="text" name="landmarks" value="">
-
-              <label for="timeOfYear">Time of Year</label>
-              <input id="timeOfYear" class="form-control" type="text" name="timeOfYear" value="">
-
-              <label for="notes">Notes</label>
-              <input id="notes" class="form-control" type="text" name="notes" value="">
+              <input id="task" class="form-control" type="text" name="task" value="" placeholder="Type your task here">
             </div>
-
             <button class="btn btn-success" type="submit" name="button">Add</button>
           </form>
         </div>
-        <div id="show-place" class="col-md-6">
-          <h2></h2>
-
-          <p>Landmarks: <span class="landmarks"></span></p>
-          <p>Time of Year: <span class="timeOfYear"></span></p>
-          <p>Notes: <span class="notes"></span></p>
+        <div class="col-md-6">
+          <h3>Here is a list of your tasks:</h3>
+          <p>
+            <em>Click a task to check it off</em>
+          </p>
+          <hr>
+          <ol id="outputSection">
+          </ol>
         </div>
-      </div>
-      <div>
-        <h3>Here are your places you've been:</h3>
-        <ul id="outputSection">
-
-        </ul>
       </div>
     </div>
   </body>

@@ -5,6 +5,12 @@ function Task (task ) {
 
 //Front End
 $(function(){
+  $("#kill").click(function(){
+    // if(confirm("Are you sure?")){
+    //   $("li").remove();
+    // }
+    $("li").remove();
+  });
   $("form").submit(function(e){
     e.preventDefault();
     var userTask = $("#task").val();
@@ -25,16 +31,6 @@ $(function(){
 
     $( "ul, li" ).disableSelection();
 
-
-
-    // $(".task").last().click(function(){
-    //   $("#show-place").show();
-    //   $("#show-place h2").text(userLocation);
-    //   $("#show-place .landmarks").text(userLandmarks);
-    //   $("#show-place .timeOfYear").text(userTimeOfYear);
-    //   $("#show-place .notes").text(userNotes);
-    //
-    // });
     $(".remove").last().click(function(){
       $(this).parent().toggleClass("completed");
       $(this).parent().appendTo("#outputSection");

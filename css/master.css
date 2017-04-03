@@ -3,7 +3,11 @@ ul {
   padding-left: 0px;
 }
 
-.btn-default {
+.modal{
+  margin-top: 200px;
+}
+
+.btn #kill {
   margin-bottom: 50px;
 }
 
@@ -27,4 +31,8 @@ h3 {
 
 .completed .btn{
   background-color: green;
+}
+
+#myModalLabel, .modal-footer {
+  text-align: center;
 }

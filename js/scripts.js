@@ -13,7 +13,7 @@ $(function(){
     $("#outputSection").append("<li class='task'>"
     + userTask
     + "<button class='remove btn btn-danger'>Completed</button>"
-    + "<hr> </li>" );
+    + " <hr> </li>" );
 
     $("#outputSection").sortable({
       revert: true

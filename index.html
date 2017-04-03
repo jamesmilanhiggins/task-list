@@ -10,7 +10,40 @@
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input id="location" class="form-control" type="text" name="location" value="">
 
+              <label for="landmarks">Landmarks</label>
+              <input id="landmarks" class="form-control" type="text" name="landmarks" value="">
+
+              <label for="timeOfYear">Time of Year</label>
+              <input id="timeOfYear" class="form-control" type="text" name="timeOfYear" value="">
+
+              <label for="notes">Notes</label>
+              <input id="notes" class="form-control" type="text" name="notes" value="">
+            </div>
+
+            <button class="btn btn-success" type="submit" name="button">Add</button>
+          </form>
+        </div>
+        <div id="show-place" class="col-md-6">
+          <h2></h2>
+
+          <p>Landmarks: <span class="landmarks"></span></p>
+          <p>Time of Year: <span class="timeOfYear"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+        </div>
+      </div>
+      <div>
+        <h3>Here are your places you've been:</h3>
+        <ul id="outputSection">
+
+        </ul>
+      </div>
     </div>
   </body>
 </html>

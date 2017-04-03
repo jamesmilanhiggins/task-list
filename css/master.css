@@ -1,0 +1,13 @@
+#show-place {
+  display: none;
+}
+
+.place {
+  cursor: pointer;
+  color: #0088cc;
+  list-style: none;
+}
+
+.place:hover {
+  text-decoration: underline;
+}
